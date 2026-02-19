@@ -1,0 +1,153 @@
+/* ================= GLOBAL ================= */
+
+body {
+  margin: 0;
+  background-color: #F6F8ED;
+  font-family: 'Nobel', sans-serif;
+}
+
+/* ================= HERO WRAPPER ================= */
+
+.hero {
+  width: 100%;
+  height: 100vh;                 /* FULL SCREEN */
+  display: flex;
+  justify-content: center;
+  align-items: center;           /* CENTER EVERYTHING VERTICALLY */
+  background-color: #F6F8ED;
+}
+
+/* ================= HERO INNER ================= */
+
+.hero-inner {
+  width: 1440px;
+  max-width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 100px;              /* breathing space */
+  box-sizing: border-box;
+}
+
+/* ================= LEFT ================= */
+
+.left {
+  flex: 0 0 520px;
+}
+
+.balloon {
+  width: 520px;
+  height: auto;
+  display: block;
+}
+
+/* ================= RIGHT ================= */
+
+.right {
+  flex: 0 0 760px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ================= CARD ================= */
+
+.card {
+  width: 760px;
+  padding: 40px;
+
+  background-color: #5CBBD4;
+  border-radius: 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 4px 6px 12px rgba(0,0,0,0.15);
+}
+
+/* ================= TEXT ================= */
+
+.card h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: #1F4993;
+  margin: 0 0 12px 0;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #1F4993;
+  margin: 0;
+}
+
+.date {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1F4993;
+  margin: 8px 0 40px 0;
+}
+
+/* ================= TIMER ================= */
+
+.timer {
+  width: 660px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.digits {
+  display: flex;
+  gap: 18px;
+}
+
+.box {
+  width: 90px;
+  height: 100px;
+
+  background-color: #F6F8ED;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+  font-weight: 700;
+  color: #1F4993;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+  margin-top: 50px;
+
+  width: 340px;
+  height: 75px;
+
+  background-color: #98CE83;
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 800;
+  font-size: 22px;
+  color: #1F4993;
+
+  text-decoration: none;
+
+  box-shadow: 3px 5px 0 #355F2C;
+}

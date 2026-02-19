@@ -1,4 +1,12 @@
-/* NavBar Styling */
+/* ================= GLOBAL ================= */
+
+body {
+    margin: 0;
+    font-family: 'Nobel', sans-serif;
+    background-color: #F6F8ED;
+}
+
+/* ================= NAVBAR ================= */
 
 * {
     background: #F6F8ED;
@@ -6,22 +14,24 @@
 
 #navbar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
-    gap: 681px;
+    padding: 16px 80px;
 
     position: absolute;
     width: 1440px;
     height: 124px;
-    left: 0px;
-    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+
+    box-sizing: border-box;
 }
+
+/* LOGO */
 
 .logo {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 8px 4px;
     gap: 16px;
@@ -33,57 +43,39 @@
 }
 
 .logo-text {
-    width: 116px;
-    height: 58px;
-
-    font-family: 'Nobel';
-    font-style: normal;
     font-weight: 900;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
-
     color: #000000;
 }
 
+/* NAV BUTTONS */
+
 .nav-buttons {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 0px;
-
     width: 444px;
     height: 39px;
-
     background: #1F4993;
     border-radius: 999px;
 }
 
 .nav-button {
-    /* Nav Button Layout*/
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 10px;
 
     width: 111px;
-    height: 19px;
-
-    /* Button Text Layout*/
-    font-family: 'Nobel';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
     text-decoration: none;
 }
 
 .nav-button-green {
     background: #98CE83;
     color: #01203F;
+    border-radius: 999px 0 0 999px;
 }
 
 .nav-button-blue {
@@ -91,26 +83,157 @@
     color: #F6F8ED;
 }
 
-.button-rounded {
-    border-radius: 999px;
-}
-
-.button-rounded-left {
-    border-radius: 999px 0px 0px 999px;
-}
-
 .button-rounded-right {
-    border-radius: 0px 999px 999px 0px;
+    border-radius: 0 999px 999px 0;
 }
 
 .shadow {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* ================= HERO ================= */
 
-/* Mobile formatting */
+.hero {
+    margin-top: 124px;
+    height: calc(100vh - 124px);
 
-@media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    
+.hero-inner {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    box-sizing: border-box;
+}
+
+/* LEFT */
+
+.left {
+    flex: 0 0 520px;
+}
+
+.balloon {
+    width: 520px;
+    height: auto;
+}
+
+/* RIGHT */
+
+.right {
+    flex: 0 0 760px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CARD */
+
+.card {
+    width: 760px;
+    height: 420px;
+    background-color: #5CBBD4;
+    border-radius: 36px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h1 {
+    font-size: 64px;
+    font-weight: 900;
+    color: #1F4993;
+    margin: 0 0 12px 0;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: #1F4993;
+    margin: 0;
+}
+
+.date {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F4993;
+    margin: 8px 0 40px 0;
+}
+
+/* TIMER */
+
+.timer {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.digits {
+    display: flex;
+    gap: 18px;
+}
+
+.box {
+    width: 90px;
+    height: 100px;
+    background-color: #F6F8ED;
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+    font-weight: 700;
+    color: #1F4993;
+}
+
+/* BUTTON */
+
+.btn {
+    margin-top: 50px;
+    width: 340px;
+    height: 75px;
+    background-color: #98CE83;
+    border-radius: 999px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 800;
+    font-size: 22px;
+    color: #1F4993;
+    text-decoration: none;
+
+    box-shadow: 3px 5px 0 #355F2C;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #1F4993;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-inner {
+    width: 1440px;
+    margin: 0 auto;
 }
