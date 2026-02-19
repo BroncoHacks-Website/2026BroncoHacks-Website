@@ -1,59 +1,45 @@
-/* ================= GLOBAL ================= */
-
-body {
-    margin: 0;
-    font-family: 'Nobel', sans-serif;
-    background-color: #F6F8ED;
-}
-
 /* ================= NAVBAR ================= */
 
-* {
-    background: #F6F8ED;
-}
-
 #navbar {
+    width: 1440px;
+    height: 124px;
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 16px 80px;
-
-    position: absolute;
-    width: 1440px;
-    height: 124px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-
     box-sizing: border-box;
 }
 
-/* LOGO */
+/* ================= LOGO ================= */
 
 .logo {
     display: flex;
     align-items: center;
-    padding: 8px 4px;
     gap: 16px;
+
+    padding: 8px 4px;
     background: rgba(246, 248, 237, 0.25);
     border-radius: 16px;
+}
 
-    width: 216px;
-    height: 92px;
+.logo-img {
+    height: 76px;
 }
 
 .logo-text {
+    font-family: 'Nobel', sans-serif;
     font-weight: 900;
     font-size: 24px;
-    line-height: 29px;
-    color: #000000;
+    color: #000;
 }
 
-/* NAV BUTTONS */
+/* ================= NAV BUTTONS ================= */
 
 .nav-buttons {
     display: flex;
-    align-items: center;
     width: 444px;
     height: 39px;
     background: #1F4993;
@@ -61,12 +47,12 @@ body {
 }
 
 .nav-button {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 
-    width: 111px;
+    font-family: 'Nobel', sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
@@ -75,7 +61,7 @@ body {
 .nav-button-green {
     background: #98CE83;
     color: #01203F;
-    border-radius: 999px 0 0 999px;
+    border-radius: 999px;
 }
 
 .nav-button-blue {
@@ -89,151 +75,4 @@ body {
 
 .shadow {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-}
-
-/* ================= HERO ================= */
-
-.hero {
-    margin-top: 124px;
-    height: calc(100vh - 124px);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-inner {
-    width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 120px;
-    box-sizing: border-box;
-}
-
-/* LEFT */
-
-.left {
-    flex: 0 0 520px;
-}
-
-.balloon {
-    width: 520px;
-    height: auto;
-}
-
-/* RIGHT */
-
-.right {
-    flex: 0 0 760px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* CARD */
-
-.card {
-    width: 760px;
-    height: 420px;
-    background-color: #5CBBD4;
-    border-radius: 36px;
-    padding: 40px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: 4px 6px 12px rgba(0,0,0,0.15);
-}
-
-.card h1 {
-    font-size: 64px;
-    font-weight: 900;
-    color: #1F4993;
-    margin: 0 0 12px 0;
-}
-
-.subtitle {
-    font-size: 22px;
-    color: #1F4993;
-    margin: 0;
-}
-
-.date {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1F4993;
-    margin: 8px 0 40px 0;
-}
-
-/* TIMER */
-
-.timer {
-    width: 660px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-}
-
-.digits {
-    display: flex;
-    gap: 18px;
-}
-
-.box {
-    width: 90px;
-    height: 100px;
-    background-color: #F6F8ED;
-    border-radius: 18px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 40px;
-    font-weight: 700;
-    color: #1F4993;
-}
-
-/* BUTTON */
-
-.btn {
-    margin-top: 50px;
-    width: 340px;
-    height: 75px;
-    background-color: #98CE83;
-    border-radius: 999px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: 800;
-    font-size: 22px;
-    color: #1F4993;
-    text-decoration: none;
-
-    box-shadow: 3px 5px 0 #355F2C;
-}
-
-/* ================= FOOTER ================= */
-
-.footer {
-    background-color: #1F4993;
-    padding: 30px 0;
-    text-align: center;
-    color: white;
-}
-
-.footer-inner {
-    width: 1440px;
-    margin: 0 auto;
 }
