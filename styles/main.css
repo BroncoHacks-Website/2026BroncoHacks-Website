@@ -4,16 +4,16 @@ body {
     font-family: 'Nobel', sans-serif;
 }
 
-/* ================= HERO ================= */
+/* ================= MAIN CONTENT ================= */
 
-.hero {
+#main-content {
     display: flex;
     justify-content: center;
     background-color: #F6F8ED;
     padding: 20px 0 80px 0;
 }
 
-.hero-inner {
+.main-inner {
     width: 100%;
     max-width: 1440px;
 
@@ -25,8 +25,6 @@ body {
     box-sizing: border-box;
 }
 
-
-
 /* LEFT SIDE */
 
 .left {
@@ -36,17 +34,16 @@ body {
     align-items: center;
 }
 
-
 .balloon {
     width: 430px;
     height: auto;
-    transform: translateY(-40px); /* move it up */
+    transform: translateY(-40px);
 }
 
 /* RIGHT SIDE */
 
 .right {
-    flex: 0 0 700px;     /* smaller card area */
+    flex: 0 0 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +54,8 @@ body {
 .card {
     width: 550px;
     padding: 30px;
-margin-top: -100px;  
+    margin-top: -100px;
+
     background-color: #5CBBD4;
     border-radius: 32px;
 
@@ -72,7 +70,7 @@ margin-top: -100px;
 /* TEXT */
 
 .card h1 {
-    font-size: 52px;   /* slightly smaller */
+    font-size: 52px;
     font-weight: 900;
     color: #1F4993;
     margin: 0 0 8px 0;
@@ -94,7 +92,7 @@ margin-top: -100px;
 /* TIMER */
 
 .timer {
-    width: 480px;  /* tighter */
+    width: 480px;
     display: flex;
     justify-content: space-between;
 }
