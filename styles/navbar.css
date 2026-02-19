@@ -1,5 +1,9 @@
 /* NavBar Styling */
 
+* {
+    background: #F6F8ED;
+}
+
 #navbar {
     display: flex;
     flex-direction: row;
@@ -39,7 +43,7 @@
     line-height: 29px;
     display: flex;
     align-items: center;
-    
+
     color: #000000;
 }
 
@@ -74,6 +78,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    text-decoration: none;
 }
 
 .nav-button-green {
@@ -100,4 +105,12 @@
 
 .shadow {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Mobile formatting */
+
+@media screen and (max-width: 768px) {
+
+    
 }
