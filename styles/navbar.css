@@ -1,7 +1,8 @@
 /* ================= NAVBAR ================= */
 
 #navbar {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 124px;
     margin: 0 auto;
 
@@ -9,9 +10,10 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 16px 80px;
+    padding: 16px 120px;  /* match hero spacing */
     box-sizing: border-box;
 }
+
 
 /* ================= LOGO ================= */
 
